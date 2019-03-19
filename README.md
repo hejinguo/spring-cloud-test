@@ -1,1 +1,1 @@
-spring-cloud 脚手架
+spring-cloud 搭建测试的项目
