@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Component
+//@Component
 public class MyFilter extends ZuulFilter {
     private static Logger log = LoggerFactory.getLogger(MyFilter.class);
 
@@ -25,6 +25,9 @@ public class MyFilter extends ZuulFilter {
 
     @Override
     public boolean shouldFilter() {
+        RequestContext ctx = RequestContext.getCurrentContext();
+//        ctx.get
+
         return true;
     }
 

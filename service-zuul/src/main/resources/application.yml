@@ -18,7 +18,12 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: service-feign
+    api-c:
+      path: /prd04erp/**
+      url: http://10.101.91.74:8081/prd04erp/
+  add-host-header: true
 
 ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 3000
+
