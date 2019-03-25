@@ -21,6 +21,12 @@ zuul:
     api-c:
       path: /prd04erp/**
       url: http://10.101.91.74:8081/prd04erp/
+    api-d:
+      path: /scm/**
+      url: http://scm.scmcc.com.cn/scm/
+      #url: http://10.101.91.72:8080/scm/
+      sensitive-headers:
+      custom-sensitive-headers: true
   add-host-header: true
 
 ribbon:
